@@ -127,4 +127,9 @@ body {
     align-items: center;
     position: relative;
   }
+
+  .papers {
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+  }
   
