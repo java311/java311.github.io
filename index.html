@@ -37,7 +37,7 @@
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
- <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+ <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
  
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -50,35 +50,49 @@
 </head>
 
 <body>
-    <div class="container" style="padding-top:2rem;">
-        <div class="col-lg-6" style="text-align:left; font-size: xx-large;">
-            <div class="row" style="padding-left: 1.5rem;">
-                <h1 style="font-size: 70px;">Alfonso Balandra</h1>
-                <h1 style="font-size: 55px;">CG/VR/HCI Engineer</h1>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <div class="header-photo">
+                <img src="./media/me.jpg" alt="Profile picture">
             </div>
-          <a href="https://www.u-tokyo.ac.jp/" style="font-weight: 400;">Tokyo University</a>/
-          <a href="https://www.titech.ac.jp/" style="font-weight: 400;">TITECH</a>/
-          <a href="https://www.buap.mx/" style="font-weight: 400;">BUAP</a>
-          <p style="font-size: large;">
-            Shibuya, Tokyo, Japan <br>
-            &#9993 ponchitobal (at) proton.me <br>
-          <br>            
-        </div>
-        
-        <div class="col-lg-6" style="text-align:center; padding-top: 2rem;">
-          <img src="./media/me.jpg" alt="Profile picture" style="height: 480px;"><br>
+            <div class="header-text">
+                <h1 class="name">Alfonso Balandra</h1>
+                <h1 class="role">CG/VR/HCI Engineer</h1>
 
-          <h5 style="padding-top: 5px;">
-            <a href="mailto:ponchitobal@proton.me" title="e-Mail" target="_blank"><i class="fa fa-envelope-square fa-3x"></i></a>
-            <a href="https://github.com/java311" title="GitHub" target="_blank"><i class="fa fa-github-square fa-3x"></i></a>
-            <a href="https://www.linkedin.com/in/alfonso-balandra-ab436b2/" title="LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
-	        <a href="https://scholar.google.co.jp/citations?user=GN0c9IoAAAAJ&hl=en" title="Google Scholar" target="_blank"><i class="ai ai-google-scholar-square ai-3x"></i></a>
-	        <a href="https://dblp.org/pid/143/3726.html" target="_blank"><i class="ai ai-dblp-square ai-3x"></i></a>  <!-- xxx fix this icon -->
-            <a href="https://www.instagram.com/ponchobal" title="Instagram" target="_blank"><i class="ai ai-instagram-square ai-3x"></i></a>
-        </h5>
+                <div class="header-affil">
+                    <a href="https://www.u-tokyo.ac.jp/">Tokyo University</a> /
+                    <a href="https://www.titech.ac.jp/">TITECH</a> /
+                    <a href="https://www.buap.mx/">BUAP</a>
+                </div>
 
+                <div class="header-contact">
+                    Shibuya, Tokyo, Japan &nbsp;&middot;&nbsp;
+                    <a href="mailto:ponchitobal@proton.me">ponchitobal (at) proton.me</a>
+                </div>
+
+                <div class="social-row">
+                    <a href="mailto:ponchitobal@proton.me" title="e-Mail" target="_blank"><i class="fa fa-envelope"></i></a>
+                    <a href="https://github.com/java311" title="GitHub" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/alfonso-balandra-ab436b2/" title="LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://scholar.google.co.jp/citations?user=GN0c9IoAAAAJ&hl=en" title="Google Scholar" target="_blank"><i class="ai ai-google-scholar"></i></a>
+                    <a href="https://dblp.org/pid/143/3726.html" title="DBLP" target="_blank"><i class="ai ai-dblp"></i></a>
+                </div>
+            </div>
         </div>
-       </div>
+    </header>
+
+    <!-- Sticky anchor navigation -->
+    <nav class="nav-bar">
+        <div class="nav-inner">
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#publications">Publications</a>
+            <a href="#awards">Awards</a>
+        </div>
+    </nav>
 
     <!-- Introduction -->
     <!-- <div class="container">
@@ -92,529 +106,489 @@
             Photogrametry, Video Games, CAD and GIS data visualization. </p>
     </div> -->
 
+    <!-- Professional Experience -->
+    <section class="section" id="experience">
     <div class="container">
+        <div class="section-eyebrow">Career</div>
         <h2>Professional Experience</h2>
         <hr/>
-        <p class="papers"> <a href="https://kashika.co.jp/"><b>Kashika</b></a>  </p>
-        <p class="label date">03/2022</p> <p class="label date">Today</p> <b> CG Engineer / Virtual Production / Photogrametry  </b>
-           <p> 
-            <ul>
-                <li>Virtual Production software development (in Unity) [Camera Tracking, Video Compositing, Animation] </li>
-                <div class="video-container">
-                    <iframe width="320" height="240" src="https://www.youtube.com/embed/kBcj-LVfKCs?modestbranding=1"></iframe> 
-                    <br>DE4/NHK Weather Animation System.
-                </div>
-                <li>Software for 3D Weather Forecast Visualization and Animation for NHK news (in Unity)</li>
-                <div class="video-container">
-                    <iframe width="320" height="240" src="https://www.youtube.com/embed/YIgI-qk81Lk?modestbranding=1"></iframe> 
-                    <br>DE4/NHK Weather Animation System.
-                </div>
-                <li>Diverse visualization/render techniques research. [Point Cloud Video, NERF and Gaussian Splatting] </li>
-                <div class="video-container">
-                    <iframe width="320" height="240" src="https://www.youtube.com/embed/oGRqAbEn4m4?modestbranding=1"></iframe> 
-                    <br>Point Cloud video played in Unity.
-                </div>
-                <div class="video-container">
-                    <iframe width="320" height="240" src="https://www.youtube.com/embed/2FCdYEZ5PyM"></iframe> 
-                    <br>Bonsai Gaussian Splatting.
-                </div>
-                <div class="video-container">
-                    <iframe width="320" height="240" src="https://www.youtube.com/embed/7kwoc7sTVO8"></iframe> 
-                    <br>Bonsai NERF.
-                </div>
-              </ul>
-           </p> 
-        </p>
-        <p class="papers"><a href="https://www.u-tokyo.ac.jp/en/"><b>Tokyo University</b></a> at <a href="https://star.rcast.u-tokyo.ac.jp"><b>Inami Laboratory</b></a></p>
-        <p class="label date">03/2020</p> <p class="label date">03/2022</p>  <b> Project Researcher / PostDoc</b>
-           <p> 
-            <ul>
-                <li> Advisor for several Phd and Master degree candidates. </li> 
-                <li><a href="https://github.com/java311/PMirus">P-MIRU</a> A Hyperspectral photographic camera for botanical research</li>
-                <li><a href="https://github.com/java311/Bee-vision">Bee Vision</a> Bee Vision, AR/HMD interface to simulate the vision of a Bee. By mixing UV,Infrared and visible light on realtime.  </li>  <!-- xxx put git hub here  -->
-                <li> Robotic Haptic Interface for slow motion juggling. (SlowBall) </li>  <!-- xxx add paper here-->
-                <li> Explore new Haptic Music Interfaces. Use rod simulated vibration to display different tones.</li> <!-- xxx put git hub here  -->
-              </ul>
-           </p> 
-        </p>
-        <p class="papers"><a href="https://www.u-tokyo.ac.jp/en/"><b>Tokyo Institute of Technology</b></a>  at <a href="https://haselab.net/"><b>Hasegawa Laboratory</b></a></p>
-            <p class="label date">04/2019</p> <p class="label date">03/2020</p>  <b> Project Researcher / PostDoc </b>
-               <p> 
-                <ul>
-                    <li> Advisor for several Phd and Master degree candidates. </li> 
-                    <li> Novel haptic interface for intuitive vibration communication. (C#, C++, Arduino, Bluetooth)</li> <!-- xxx add paper here-->
-                  </ul>
-               </p> 
-            </p>
-        </p>
 
-        <p class="papers"><a href="https://www.diverta.co.jp"><b>Diverta Inc</b></a></p>
-            <p class="label date">09/2017</p> <p class="label date">03/2019</p>  <b> Web Developer / Part Time </b>
-               <p> 
-                <ul>
-                    <li> Web Developer on a tailor made RCMS based in Joomla. (PHP, Postgres, GIT, Docker, Selenium) </li> 
-                    <li> Automatic web testing using Selenium. </li>
-                  </ul>
-               </p> 
-            </p>
-        </p>
-
-        <p class="papers"><a href="https://www.prefixa.com/"><b>Prefixa International</b></a></p>
-            <p class="label date">03/2011</p> <p class="label date">03/2012</p> <b> CG Engineer, Developer and Tester </b>
-               <p> 
-                <ul>
-                    <li> OneRender a GPU/cloud based render engine (C++, CUDA, Qt, Assimp, XML, AWS)</li> <!-- xxx add twitter links here-->
-                    <li> OneRender render quality testing (Blender and Cycles)</li>
+        <div class="entry">
+            <div class="entry-head">
+                <span class="entry-org"><a href="https://kashika.co.jp/">Kashika</a></span>
+                <span class="date-range"><span class="date">03/2022</span> &ndash; <span class="date">Today</span></span>
+            </div>
+            <div class="entry-role">CG Engineer / Virtual Production / Photogrametry</div>
+            <ul>
+                <li>Virtual Production software development (in Unity) [Camera Tracking, Video Compositing, Animation]
                     <div class="video-container">
-                        <iframe width="320" height="240" src="https://www.youtube.com/embed/PiSlqAoBXM"></iframe> 
+                        <iframe width="320" height="240" src="https://www.youtube.com/embed/kBcj-LVfKCs?modestbranding=1"></iframe>
+                        <div class="video-caption">DE4/NHK Weather Animation System.</div>
                     </div>
-                    <li> GPU cluster admin (AWS) </li>
-                    <li> OneRender API control and demonstration using a tablet with online render controls (Android, XML) </li>
-                  </ul>
-               </p> 
-            </p>
-        </p>
+                </li>
+                <li>Software for 3D Weather Forecast Visualization and Animation for NHK news (in Unity)
+                    <div class="video-container">
+                        <iframe width="320" height="240" src="https://www.youtube.com/embed/YIgI-qk81Lk?modestbranding=1"></iframe>
+                        <div class="video-caption">DE4/NHK Weather Animation System.</div>
+                    </div>
+                </li>
+                <li>Diverse visualization/render techniques research. [Point Cloud Video, NERF and Gaussian Splatting]
+                    <div class="video-container">
+                        <iframe width="320" height="240" src="https://www.youtube.com/embed/oGRqAbEn4m4?modestbranding=1"></iframe>
+                        <div class="video-caption">Point Cloud video played in Unity.</div>
+                    </div>
+                    <div class="video-container">
+                        <iframe width="320" height="240" src="https://www.youtube.com/embed/2FCdYEZ5PyM"></iframe>
+                        <div class="video-caption">Bonsai Gaussian Splatting.</div>
+                    </div>
+                    <div class="video-container">
+                        <iframe width="320" height="240" src="https://www.youtube.com/embed/7kwoc7sTVO8"></iframe>
+                        <div class="video-caption">Bonsai NERF.</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
 
-        <p class="papers"><a href="https://www.t-systems.com/mx/es"><b>T-Systems</b></a></p>
-            <p class="label date">09/2010</p> <p class="label date">04/2011</p> <b> Developer and Technical Support </b>
-               <p> 
-                <ul>
-                    <li> Development for administrative software in C# (C# and MySQL)</li> 
-                    <li> Second level technical support</li>
-                  </ul>
-               </p> 
-            </p>
-        </p>
+        <div class="entry">
+            <div class="entry-head">
+                <span class="entry-org"><a href="https://www.u-tokyo.ac.jp/en/">Tokyo University</a> at <a href="https://star.rcast.u-tokyo.ac.jp">Inami Laboratory</a></span>
+                <span class="date-range"><span class="date">03/2020</span> &ndash; <span class="date">03/2022</span></span>
+            </div>
+            <div class="entry-role">Project Researcher / PostDoc</div>
+            <ul>
+                <li>Advisor for several Phd and Master degree candidates.</li>
+                <li><a href="https://github.com/java311/PMirus">P-MIRU</a> A Hyperspectral photographic camera for botanical research</li>
+                <li><a href="https://github.com/java311/Bee-vision">Bee Vision</a> Bee Vision, AR/HMD interface to simulate the vision of a Bee. By mixing UV,Infrared and visible light on realtime.</li>
+                <li>Robotic Haptic Interface for slow motion juggling. (SlowBall)</li>
+                <li>Explore new Haptic Music Interfaces. Use rod simulated vibration to display different tones.</li>
+            </ul>
+        </div>
 
-        <p class="papers"><a href="https://www.t-systems.com/mx/es"><b>National Institute of Astrophysics Optics and Electronics - INAOE</b></b></a></p>
-            <p class="label date">09/2009</p> <p class="label date">09/2010</p> <b> Software Analyst </b>
-               <p> 
-                <ul>
-                    <li> Web Development in PHP and MySQL transfer tool for portable terminals, implemented using Java </li>
-                    <li> Develop cloud transfer tool for Windows CE portable terminals (Java and EVE VM) </li>
-                  </ul>
-               </p> 
-            </p>
-        </p>
+        <div class="entry">
+            <div class="entry-head">
+                <span class="entry-org"><a href="https://www.u-tokyo.ac.jp/en/">Tokyo Institute of Technology</a> at <a href="https://haselab.net/">Hasegawa Laboratory</a></span>
+                <span class="date-range"><span class="date">04/2019</span> &ndash; <span class="date">03/2020</span></span>
+            </div>
+            <div class="entry-role">Project Researcher / PostDoc</div>
+            <ul>
+                <li>Advisor for several Phd and Master degree candidates.</li>
+                <li>Novel haptic interface for intuitive vibration communication. (C#, C++, Arduino, Bluetooth)</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-head">
+                <span class="entry-org"><a href="https://www.diverta.co.jp">Diverta Inc</a></span>
+                <span class="date-range"><span class="date">09/2017</span> &ndash; <span class="date">03/2019</span></span>
+            </div>
+            <div class="entry-role">Web Developer / Part Time</div>
+            <ul>
+                <li>Web Developer on a tailor made RCMS based in Joomla. (PHP, Postgres, GIT, Docker, Selenium)</li>
+                <li>Automatic web testing using Selenium.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-head">
+                <span class="entry-org"><a href="https://www.prefixa.com/">Prefixa International</a></span>
+                <span class="date-range"><span class="date">03/2011</span> &ndash; <span class="date">03/2012</span></span>
+            </div>
+            <div class="entry-role">CG Engineer, Developer and Tester</div>
+            <ul>
+                <li>OneRender a GPU/cloud based render engine (C++, CUDA, Qt, Assimp, XML, AWS)</li>
+                <li>OneRender render quality testing (Blender and Cycles)
+                    <div class="video-container">
+                        <iframe width="320" height="240" src="https://www.youtube.com/embed/PiSlqAoBXM"></iframe>
+                    </div>
+                </li>
+                <li>GPU cluster admin (AWS)</li>
+                <li>OneRender API control and demonstration using a tablet with online render controls (Android, XML)</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-head">
+                <span class="entry-org"><a href="https://www.t-systems.com/mx/es">T-Systems</a></span>
+                <span class="date-range"><span class="date">09/2010</span> &ndash; <span class="date">04/2011</span></span>
+            </div>
+            <div class="entry-role">Developer and Technical Support</div>
+            <ul>
+                <li>Development for administrative software in C# (C# and MySQL)</li>
+                <li>Second level technical support</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-head">
+                <span class="entry-org"><a href="https://www.t-systems.com/mx/es">National Institute of Astrophysics Optics and Electronics - INAOE</a></span>
+                <span class="date-range"><span class="date">09/2009</span> &ndash; <span class="date">09/2010</span></span>
+            </div>
+            <div class="entry-role">Software Analyst</div>
+            <ul>
+                <li>Web Development in PHP and MySQL transfer tool for portable terminals, implemented using Java</li>
+                <li>Develop cloud transfer tool for Windows CE portable terminals (Java and EVE VM)</li>
+            </ul>
+        </div>
     </div>
+    </section>
 
     <!-- Education -->
+    <section class="section" id="education">
     <div class="container">
+        <div class="section-eyebrow">Academic background</div>
         <h2>Education</h2>
         <hr/>
-        <p class="papers"> <a href="https://www.titech.ac.jp/"><b>Tokyo Institute of Technology</b></a>  </p>
-        <p class="label date">2014</p> <p class="label date">2019</p> <b> PhD in Computer Intelligence and Systems Science </b>
-           <p> 
+
+        <div class="entry">
+            <div class="entry-head">
+                <span class="entry-org"><a href="https://www.titech.ac.jp/">Tokyo Institute of Technology</a></span>
+                <span class="date-range"><span class="date">2014</span> &ndash; <span class="date">2019</span></span>
+            </div>
+            <div class="entry-role">PhD in Computer Intelligence and Systems Science</div>
             <ul>
                 <li>Topics: Virtual Reality, Haptic Interfaces and Multimodal Perception at <a href="https://haselab.net/">Hasegawa Lab</a>.</li>
-              </ul>
-           </p> 
-        </p>
+            </ul>
+        </div>
 
-        <p class="papers"> <a href="https://www.titech.ac.jp/"><b>Tokyo Institute of Technology</b></a>  </p>
-        <p class="label date">2012</p> <p class="label date">2014</p> <b> Master in Computer Intelligence and Systems Science </b>
-           <p> 
+        <div class="entry">
+            <div class="entry-head">
+                <span class="entry-org"><a href="https://www.titech.ac.jp/">Tokyo Institute of Technology</a></span>
+                <span class="date-range"><span class="date">2012</span> &ndash; <span class="date">2014</span></span>
+            </div>
+            <div class="entry-role">Master in Computer Intelligence and Systems Science</div>
             <ul>
                 <li>Topics: Virtual Reality, Haptic Interfaces and Simulation at <a href="https://haselab.net/">Hasegawa Lab</a>.</li>
-              </ul>
-           </p> 
-        </p>
+            </ul>
+        </div>
 
-        <p class="papers"> <a href="https://www.titech.ac.jp/"><b>Autonomous University of Puebla (BUAP)</b></a>  </p>
-        <p class="label date">2003</p> <p class="label date">2009</p> <b> Bachelor in Computer Science</b> (Graduated with Cum Laude)
-        </p><br>
+        <div class="entry">
+            <div class="entry-head">
+                <span class="entry-org"><a href="https://www.titech.ac.jp/">Autonomous University of Puebla (BUAP)</a></span>
+                <span class="date-range"><span class="date">2003</span> &ndash; <span class="date">2009</span></span>
+            </div>
+            <div class="entry-role">Bachelor in Computer Science <span style="font-weight:400; color: var(--color-text-muted); font-size: 14px;">(Graduated with Cum Laude)</span></div>
+        </div>
 
-        <p class="papers"> <a><b>Languages</b></a>  </p>
-        <p><b>English :</b> Fluent (TOEIC paper format 920 pts)  </p>
-        <p><b>Japanese :</b> Conversational  <br></p>
-        <p><b>Spanish :</b> Native  <br><br> </p>
-    </div> 
+        <div class="entry">
+            <div class="entry-org" style="margin-bottom: 0.6rem;"><h3>Languages</h3></div>
+            <p><b>English:</b> Fluent (TOEIC paper format 920 pts)</p>
+            <p><b>Japanese:</b> Conversational</p>
+            <p><b>Spanish:</b> Native</p>
+        </div>
+    </div>
+    </section>
 
     <!-- Projects -->
+    <section class="section" id="projects">
     <div class="container">
+        <div class="section-eyebrow">Selected work</div>
         <h2>Projects</h2>
         <hr/>
 
         <!-- PMIRU -->
-        <div class="container" style="text-align:left; padding-top: 2rem; padding-bottom: 2rem;">
-            <div class="col-lg-4" style="text-align:left; padding-top: 2rem; padding-right: 0; padding-left: 0;">
+        <div class="project-card">
+            <div class="project-image">
                 <a href="https://github.com/java311/PMiru">
-                    <img src="./media/pmiru1.png" alt="sugar" style="width: 350px;">
+                    <img src="./media/pmiru1.png" alt="PMIRU camera">
                 </a>
             </div>
-            <div  class="col-lg-8" style="text-align: left;">
+            <div class="project-body">
                 <a href="https://github.com/java311/PMiru">
                     <h4>PMIRU - Hyperspectral polarized light camera for botanical research.</h4>
                 </a>
-                <p style="font-size: 20px;">Plant and Cell Physiology 2023</p>
-                <div>
-                    <a href="https://java311.github.io/"><b>Alfonso Balandra</b></a>, Yuki Doll, Shogo Hirose, Tomoaki Kajiwara, Masaaki K Watahiki, et. al.
+                <div class="project-venue">Plant and Cell Physiology 2023</div>
+                <div class="project-authors">
+                    <b>Alfonso Balandra</b>, Yuki Doll, Shogo Hirose, Tomoaki Kajiwara, Masaaki K Watahiki, et. al.
                 </div>
-                An Open Source hyperspectral polarized light camera, specifically build for botanical exploration and research. 
-                This camera lighting, polarization is automatically controlled by a software in order to capture a stack of photos, also know
-                as reflectome. Each layer of the reflectome contains photo capture with an specific wavelengths and polarization angle.
-                The with the same software the data can be uploaded to the cloud to be saved and visualized.     <br>
-                <a class="label label-info" href="https://academic.oup.com/pcp/advance-article-abstract/doi/10.1093/pcp/pcad045/7175501?redirectedFrom=fulltext"><i class="fa fa-file-text"></i>&nbsp;&nbsp;Paper</a>
-                <a class="label label-info" href="https://github.com/java311/PMiru"><i class="fa fa-code fa-lg" style="vertical-align: center; margin-top: 0px"></i>&nbsp;&nbsp;Code</a>
+                <p class="project-desc">
+                    An Open Source hyperspectral polarized light camera, specifically build for botanical exploration and research.
+                    This camera lighting, polarization is automatically controlled by a software in order to capture a stack of photos, also know
+                    as reflectome. Each layer of the reflectome contains photo capture with an specific wavelengths and polarization angle.
+                    The with the same software the data can be uploaded to the cloud to be saved and visualized.
+                </p>
+                <a class="label-info" href="https://academic.oup.com/pcp/advance-article-abstract/doi/10.1093/pcp/pcad045/7175501?redirectedFrom=fulltext"><i class="fa fa-file-text"></i>Paper</a>
+                <a class="label-info" href="https://github.com/java311/PMiru"><i class="fa fa-code"></i>Code</a>
             </div>
-        </div><br>
+        </div>
 
         <!-- Bee Vision -->
-        <div class="container" style="text-align:left; padding-top: 2rem; padding-bottom: 2rem;">
-            <div class="col-lg-4" style="text-align:left; padding-top: 2rem; padding-right: 0; padding-left: 0;">
+        <div class="project-card">
+            <div class="project-image">
                 <a href="https://github.com/java311/Bee-vision">
-                    <img src="./media/bee_vision1.png" alt="sugar" style="width: 350px;">
+                    <img src="./media/bee_vision1.png" alt="Bee Vision project">
                 </a>
             </div>
-            <div  class="col-lg-8" style="text-align: left;">
+            <div class="project-body">
                 <a href="https://github.com/java311/Bee-vision">
                     <h4>Bee Vision: An AR/HMD Vision System for Ultraviolet and Infrared Perception, Inspired by the Visual Perspective of Bees.</h4>
                 </a>
-                <p style="font-size: 20px;">Not published yet</p>
-                <div>
+                <div class="project-venue">Not published yet</div>
+                <div class="project-authors">
                     <a href="https://java311.github.io/"><b>Alfonso Balandra</b></a>
                 </div>
-                Bee Vision is an Augmented Reality (AR) project that transforms human vision 
-                into the perspective of a bee. Leveraging a depth stereo camera alongside a monochrome infrared/UV sensor.
-                The software register the depth information with the infrared and UV sensor's image registration to align with 
-                the RGB camera's perspective. The initial results showcase a real-time prototype utilizing OpenCV/CUDA, 
-                achieving 20 frames per second, although optimization is still needed for Head-Mounted Display (HMD) applications. <br>
-                <a class="label label-info" href="https://github.com/java311/Muni-neuron"><i class="fa fa-code fa-lg" style="vertical-align: center; margin-top: 0px"></i>&nbsp;&nbsp;Code</a>
+                <p class="project-desc">
+                    Bee Vision is an Augmented Reality (AR) project that transforms human vision
+                    into the perspective of a bee. Leveraging a depth stereo camera alongside a monochrome infrared/UV sensor.
+                    The software register the depth information with the infrared and UV sensor's image registration to align with
+                    the RGB camera's perspective. The initial results showcase a real-time prototype utilizing OpenCV/CUDA,
+                    achieving 20 frames per second, although optimization is still needed for Head-Mounted Display (HMD) applications.
+                </p>
+                <a class="label-info" href="https://github.com/java311/Muni-neuron"><i class="fa fa-code"></i>Code</a>
             </div>
-        </div><br>
-        
+        </div>
+
         <!-- Muni Neuron -->
-        <div class="container" style="text-align:left; padding-top: 2rem; padding-bottom: 2rem;">
-            <div class="col-lg-4" style="text-align:left; padding-top: 2rem; padding-right: 0; padding-left: 0;">
+        <div class="project-card">
+            <div class="project-image">
                 <a href="https://github.com/java311/Muni-neuron">
-                    <img src="./media/muni1.png" alt="sugar" style="width: 350px;">
+                    <img src="./media/muni1.png" alt="Muni Neuron project">
                 </a>
             </div>
-            <div  class="col-lg-8" style="text-align: left;">
+            <div class="project-body">
                 <a href="https://github.com/java311/Muni-neuron">
                     <h4>Muni Neuron - 3d reconstruction of axial microscopic photographs of Golgi-Cox tinted neurons.</h4>
                 </a>
-                <p style="font-size: 20px;">National Computational Encounter on the Clinic Computing and Medical Informatics 2009</p>
-                <div>
-                    G. Torrealba, <a href="https://java311.github.io/"><b>A. Balandra</b></a>, G. Flores, M. Martin 
+                <div class="project-venue">National Computational Encounter on the Clinic Computing and Medical Informatics 2009</div>
+                <div class="project-authors">
+                    G. Torrealba, <a href="https://java311.github.io/"><b>A. Balandra</b></a>, G. Flores, M. Martin
                 </div>
-                MUNI - Neuron is a software designed to construct detailed 3D models of neurons from sets of axial
-                 images captured using conventional light microscopes. Targeted towards researchers studying brain morphology, 
-                 particularly those employing the Golgi-Cox method for neuron morphology analysis. This software provides 
-                 an tools for visualizing and measuring neural structures. <br>
-                <a class="label label-info" href="https://github.com/java311/Muni-neuron/blob/master/docs/Tridimensional%20Reconstruction%20of%20Neurons%20using%20clear%20light%20microscopic%20images.pdf"><i class="fa fa-file-text"></i>&nbsp;&nbsp;Paper (Eng)</a>
-                <a class="label label-info" href="https://github.com/java311/Muni-neuron/blob/master/docs/3D%20Reconstrucci%C3%B3n%20of%20neurons%20using%20clear%20light%20microscopic%20images.pdf"><i class="fa fa-file-text"></i>&nbsp;&nbsp;Paper (Esp)</a>
-                <a class="label label-info" href="https://github.com/java311/Bee-vision"><i class="fa fa-code fa-lg" style="vertical-align: center; margin-top: 0px"></i>&nbsp;&nbsp;Code</a>
+                <p class="project-desc">
+                    MUNI - Neuron is a software designed to construct detailed 3D models of neurons from sets of axial
+                    images captured using conventional light microscopes. Targeted towards researchers studying brain morphology,
+                    particularly those employing the Golgi-Cox method for neuron morphology analysis. This software provides
+                    an tools for visualizing and measuring neural structures.
+                </p>
+                <a class="label-info" href="https://github.com/java311/Muni-neuron/blob/master/docs/Tridimensional%20Reconstruction%20of%20Neurons%20using%20clear%20light%20microscopic%20images.pdf"><i class="fa fa-file-text"></i>Paper (Eng)</a>
+                <a class="label-info" href="https://github.com/java311/Muni-neuron/blob/master/docs/3D%20Reconstrucci%C3%B3n%20of%20neurons%20using%20clear%20light%20microscopic%20images.pdf"><i class="fa fa-file-text"></i>Paper (Esp)</a>
+                <a class="label-info" href="https://github.com/java311/Bee-vision"><i class="fa fa-code"></i>Code</a>
             </div>
-        </div><br>
+        </div>
 
-        <!-- SCONE -->
-        <!-- <div class="container" style="text-align:left; padding-top: 2rem; padding-bottom: 2rem;">
-            <div class="col-lg-4" style="text-align:left; padding-top: 2rem;">
-                <a href="https://arxiv.org/abs/2208.10449">
-                    <img src="./media/scone.png" alt="scone" style="width: 350px;">
-                </a>
-            </div>
-            <div  class="col-lg-8" style="text-align: left;">
-                <a href="https://arxiv.org/abs/2208.10449">
-                    <h4>SCONE: Surface Coverage Optimization in uNknown Environments by Volumetric Integration</h4>
-                </a>
-                <p style="font-size: 20px;">NeurIPS 2022 (Spotlight)</p>
-                <div>
-                    <a href="https://anttwo.github.io/"><b>Alfonso Balandra</b></a>, 
-                    <a href="https://imagine.enpc.fr/~monasse/">Pascal Monasse</a>, 
-                    <a href="https://vincentlepetit.github.io/">Vincent Lepetit</a>
-                </div>
-                We introduce a novel approach to solve the Next Best View problem for dense 3D reconstruction in unknown environments. 
-                Contrary to other learning-based methods, 
-                our approach scales to large 3D scenes and handles completely free camera motion at inference.<br>
-                <a class="label label-info" href="https://arxiv.org/abs/2208.10449"><i class="fa fa-file-text"></i>&nbsp;&nbsp;Paper</a>
-                <a class="label label-info" href="https://github.com/Anttwo/MACARONS"><i class="fa fa-code fa-lg" style="vertical-align: center; margin-top: 0px"></i>&nbsp;&nbsp;Code</a>
-                
-                <a class="label label-info" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                    <i class="fa fa-commenting fa-lg" style="vertical-align:center;margin-top:0px"></i>&nbsp;&nbsp;BibTeX
-                </a>
-                <div class="collapse" id="collapse1">
-                    <div class="card">
-                        <div class="card-block">
-                            <pre class="card-text clickselect">
-                                @inproceedings{guedon2022scone,
-                                    title={{SCONE: Surface Coverage Optimization in Unknown Environments by Volumetric Integration}},
-                                    author={Gu\'edon, Antoine and Monasse, Pascal and Lepetit, Vincent},
-                                    booktitle={{Advances in Neural Information Processing Systems}},
-                                    year={2022},
-                                  }
-                            </pre>
-                        </div>
-                      </div>
-                </div>
-            </div>
-        </div> -->
+        <!-- MACARONS / SCONE entry intentionally left commented out in source, omitted from render -->
 
     </div>
+    </section>
 
     <!-- List of Publications -->
+    <section class="section" id="publications">
     <div class="container">
+        <div class="section-eyebrow">Research</div>
         <h2>Publications</h2>
         <hr/>
 
         <!-- 1 -->
-        <div style="text-align:left; padding-top: 2rem; padding-bottom: 2rem;">
-            <div style="text-align: left;">
-                <a href="http://bit.ly/43wNA7p" style="font-size: 18px; font-weight: bold">
-                    P-MIRU, a polarized-spectral imaging system, reveals reflection
-                        information on the biological surface
-                </a>
-                <p style="font-size: 20px;">Plant and Cell Physiology 2023</p>
-                <div>
-                    <a href="https://java311.github.io/"><b>Alfonso Balandra</b></a>, 
-                    Yuki Doll, Shogo Hirose, Tomoaki Kajiwara, et. al.
-                </div> 
+        <div class="pub-entry">
+            <a href="http://bit.ly/43wNA7p" class="pub-title">
+                P-MIRU, a polarized-spectral imaging system, reveals reflection information on the biological surface
+            </a>
+            <div class="pub-venue">Plant and Cell Physiology 2023</div>
+            <div class="pub-authors">
+                <a href="https://java311.github.io/"><b>Alfonso Balandra</b></a>, Yuki Doll, Shogo Hirose, Tomoaki Kajiwara, et. al.
             </div>
         </div>
-        
+
         <!-- 2 -->
-        <div style="text-align:left; padding-top: 2rem; padding-bottom: 2rem;">
-            <div style="text-align: left;">
-                <a href="https://bit.ly/3txZnmQ" style="font-size: 18px; font-weight: bold">
-                    Investigating Textual Visual
-                        Sound Effects in a Virtual Environment and their impacts on Object Perception and Sound Perception
-                </a>
-                <p style="font-size: 20px;">ISMAR, 2021</p>
-                <div>
-                    T. Fabre, A. Verhulst, <a href="https://java311.github.io/"><b>A. Balandra</b></a>, M. Sugimoto and M. Inami
-                </div> 
+        <div class="pub-entry">
+            <a href="https://bit.ly/3txZnmQ" class="pub-title">
+                Investigating Textual Visual Sound Effects in a Virtual Environment and their impacts on Object Perception and Sound Perception
+            </a>
+            <div class="pub-venue">ISMAR, 2021</div>
+            <div class="pub-authors">
+                T. Fabre, A. Verhulst, <a href="https://java311.github.io/"><b>A. Balandra</b></a>, M. Sugimoto and M. Inami
             </div>
         </div>
 
         <!-- 3 -->
-        <div style="text-align:left; padding-top: 2rem; padding-bottom: 2rem;">
-            <div style="text-align: left;">
-                <a href="https://bit.ly/3qvbP4P" style="font-size: 18px; font-weight: bold">
-                    Continuous
-                        tactile communication using vibration with a wide range of amplitude and frequency
-                </a>
-                <p style="font-size: 20px;">Virtual Reality Society of Japan, 2019</p>
-                <div>
-                    M. Onodera, P. Wibulpolprasert, <a href="https://java311.github.io/"><b>A. Balandra</b></a>, H. Mitake and S. Hasegawa
-                </div> 
+        <div class="pub-entry">
+            <a href="https://bit.ly/3qvbP4P" class="pub-title">
+                Continuous tactile communication using vibration with a wide range of amplitude and frequency
+            </a>
+            <div class="pub-venue">Virtual Reality Society of Japan, 2019</div>
+            <div class="pub-authors">
+                M. Onodera, P. Wibulpolprasert, <a href="https://java311.github.io/"><b>A. Balandra</b></a>, H. Mitake and S. Hasegawa
             </div>
         </div>
 
         <!-- 4 -->
-        <div style="text-align:left; padding-top: 2rem; padding-bottom: 2rem;">
-            <div style="text-align: left;">
-                <a href="https://bit.ly/2JG8vgy" style="font-size: 18px; font-weight: bold">
-                    Sensitivity to Haptic-Audio Envelope Asynchrony [WIP]
-                </a>
-                <p style="font-size: 20px;">World
-                    Haptics 2019</p>
-                <div>
-                    <a href="https://java311.github.io/"><b>A. Balandra</b></a>, S. Hasegawa
-                </div> 
+        <div class="pub-entry">
+            <a href="https://bit.ly/2JG8vgy" class="pub-title">
+                Sensitivity to Haptic-Audio Envelope Asynchrony [WIP]
+            </a>
+            <div class="pub-venue">World Haptics 2019</div>
+            <div class="pub-authors">
+                <a href="https://java311.github.io/"><b>A. Balandra</b></a>, S. Hasegawa
             </div>
         </div>
 
         <!-- 5 -->
-        <div style="text-align:left; padding-top: 2rem; padding-bottom: 2rem;">
-            <div style="text-align: left;">
-                <a href="https://bit.ly/2ZHM1Ch" style="font-size: 18px; font-weight: bold">
-                    Selective listening attention enhancement, using simultaneous visual and haptic stimuli
-                </a>
-                <p style="font-size: 20px;">Journal of New Music Research 2019</p>
-                <div>
-                    <a href="https://java311.github.io/"><b>A. Balandra</b></a>, H. Mitake, T Yoshida and S. Hasegawa
-                </div> 
+        <div class="pub-entry">
+            <a href="https://bit.ly/2ZHM1Ch" class="pub-title">
+                Selective listening attention enhancement, using simultaneous visual and haptic stimuli
+            </a>
+            <div class="pub-venue">Journal of New Music Research 2019</div>
+            <div class="pub-authors">
+                <a href="https://java311.github.io/"><b>A. Balandra</b></a>, H. Mitake, T Yoshida and S. Hasegawa
             </div>
         </div>
 
         <!-- 6 -->
-        <div style="text-align:left; padding-top: 2rem; padding-bottom: 2rem;">
-            <div style="text-align: left;">
-                <a href="https://bit.ly/2N1hFJj" style="font-size: 18px; font-weight: bold">
-                    Enabling two finger virtual grasping on a single grasp 6-DOF interface, by using just one force sensor
-                </a>
-                <p style="font-size: 20px;">IEEE World of Haptics 2017</p>
-                <div>
-                    <a href="https://java311.github.io/"><b>A. Balandra</b></a>, V. Gruppelaar, H. Mitake, S. Hasegawa
-                </div> 
+        <div class="pub-entry">
+            <a href="https://bit.ly/2N1hFJj" class="pub-title">
+                Enabling two finger virtual grasping on a single grasp 6-DOF interface, by using just one force sensor
+            </a>
+            <div class="pub-venue">IEEE World of Haptics 2017</div>
+            <div class="pub-authors">
+                <a href="https://java311.github.io/"><b>A. Balandra</b></a>, V. Gruppelaar, H. Mitake, S. Hasegawa
             </div>
-            <iframe width="420" height="315"
-                    src="https://www.youtube.com/embed/54ouYmUh6JI">
-            </iframe>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/54ouYmUh6JI"></iframe>
         </div>
 
         <!-- 7 -->
-        <div style="text-align:left; padding-top: 2rem; padding-bottom: 2rem;">
-            <div style="text-align: left;">
-                <a href="https://bit.ly/2xRuXxR" style="font-size: 18px; font-weight: bold">
-                    Virtual Two-Finger Haptic Manipulation Method
-                </a>
-                <p style="font-size: 20px;">Asia Haptics Conference 2016</p>
-                <div>
-                    <a href="https://java311.github.io/"><b>A. Balandra</b></a>, V. Gruppelaar, H. Mitake, S. Hasegawa
-                </div> 
+        <div class="pub-entry">
+            <a href="https://bit.ly/2xRuXxR" class="pub-title">
+                Virtual Two-Finger Haptic Manipulation Method
+            </a>
+            <div class="pub-venue">Asia Haptics Conference 2016</div>
+            <div class="pub-authors">
+                <a href="https://java311.github.io/"><b>A. Balandra</b></a>, V. Gruppelaar, H. Mitake, S. Hasegawa
             </div>
         </div>
-        
+
         <!-- 8 -->
-        <div style="text-align:left; padding-top: 2rem; padding-bottom: 2rem;">
-            <div style="text-align: left;">
-                <a href="https://bit.ly/2ITdJ88" style="font-size: 18px; font-weight: bold">
-                    Haptic music player–-synthetic audio-tactile stimuli generation based on the notes’ pitch and instruments’ envelope mapping
-                </a>
-                <p style="font-size: 20px;">NIME 2016</p>
-                <div>
-                    <a href="https://java311.github.io/"><b>A. Balandra</b></a>, H. Mitake, and S. Hasegawa
-                </div> 
+        <div class="pub-entry">
+            <a href="https://bit.ly/2ITdJ88" class="pub-title">
+                Haptic music player&ndash;-synthetic audio-tactile stimuli generation based on the notes&rsquo; pitch and instruments&rsquo; envelope mapping
+            </a>
+            <div class="pub-venue">NIME 2016</div>
+            <div class="pub-authors">
+                <a href="https://java311.github.io/"><b>A. Balandra</b></a>, H. Mitake, and S. Hasegawa
             </div>
         </div>
 
         <!-- 9 -->
-        <div style="text-align:left; padding-top: 2rem; padding-bottom: 2rem;">
-            <div style="text-align: left;">
-                <a style="font-size: 18px; font-weight: bold">
-                    Haptic Music Player
-                </a>
-                <p style="font-size: 20px;">Asian Haptics 2014</p>
-                <div>
-                    <a href="https://java311.github.io/"><b>A. Balandra</b></a>, H. Mitake, S. Hasegawa
-                </div> 
+        <div class="pub-entry">
+            <span class="pub-title">Haptic Music Player</span>
+            <div class="pub-venue">Asian Haptics 2014</div>
+            <div class="pub-authors">
+                <a href="https://java311.github.io/"><b>A. Balandra</b></a>, H. Mitake, S. Hasegawa
             </div>
         </div>
 
         <!-- 10 -->
-        <div style="text-align:left; padding-top: 2rem; padding-bottom: 2rem;">
-            <div style="text-align: left;">
-                <a href="https://bit.ly/2X4vhbH" style="font-size: 18px; font-weight: bold">
-                    Vibration and Subsequent Collision Simulation of Finger and Object for Haptic Rendering
-                </a>
-                <p style="font-size: 20px;">EuroHaptics 2014</p>
-                <div>
-                    S. Hasegawa, Y. Takehana, <a href="https://java311.github.io/"><b>A. Balandra</b></a>, H Mitake, K. Akahane, M. Sato
-                </div> 
+        <div class="pub-entry">
+            <a href="https://bit.ly/2X4vhbH" class="pub-title">
+                Vibration and Subsequent Collision Simulation of Finger and Object for Haptic Rendering
+            </a>
+            <div class="pub-venue">EuroHaptics 2014</div>
+            <div class="pub-authors">
+                S. Hasegawa, Y. Takehana, <a href="https://java311.github.io/"><b>A. Balandra</b></a>, H Mitake, K. Akahane, M. Sato
             </div>
         </div>
 
         <!-- 11 -->
-        <div style="text-align:left; padding-top: 2rem; padding-bottom: 2rem;">
-            <div style="text-align: left;">
-                <a href="https://bit.ly/2Y7Wh9F" style="font-size: 18px; font-weight: bold">
-                    Haptic Music Player
-                </a>
-                <p style="font-size: 20px;">EuroHaptics 2014</p>
-                <div>
-                    <a href="https://java311.github.io/"><b>A. Balandra</b></a>, H. Mitake, S. Hasegawa
-                </div>
-                <iframe width="420" height="315"
-                    src="https://www.youtube.com/embed/6wx7V3H3_MY">
-                </iframe> 
+        <div class="pub-entry">
+            <a href="https://bit.ly/2Y7Wh9F" class="pub-title">
+                Haptic Music Player
+            </a>
+            <div class="pub-venue">EuroHaptics 2014</div>
+            <div class="pub-authors">
+                <a href="https://java311.github.io/"><b>A. Balandra</b></a>, H. Mitake, S. Hasegawa
             </div>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/6wx7V3H3_MY"></iframe>
         </div>
 
         <!-- 12 -->
-        <div style="text-align:left; padding-top: 2rem; padding-bottom: 2rem;">
-            <div style="text-align: left;">
-                <a href="https://bit.ly/2Kx36eM" style="font-size: 18px; font-weight: bold">
-                    Haptic Rendering based on Finite Element Simulation of Vibration
-                </a>
-                <p style="font-size: 20px;">IEEE Haptics Symposium 2014</p>
-                <div>
-                    I. Susa, Y. Takehana, <a href="https://java311.github.io/"><b>A. Balandra</b></a>, H. Mitake, S. Hasegawa
-                </div> 
+        <div class="pub-entry">
+            <a href="https://bit.ly/2Kx36eM" class="pub-title">
+                Haptic Rendering based on Finite Element Simulation of Vibration
+            </a>
+            <div class="pub-venue">IEEE Haptics Symposium 2014</div>
+            <div class="pub-authors">
+                I. Susa, Y. Takehana, <a href="https://java311.github.io/"><b>A. Balandra</b></a>, H. Mitake, S. Hasegawa
             </div>
         </div>
 
         <!-- 13 -->
-        <div style="text-align:left; padding-top: 2rem; padding-bottom: 2rem;">
-            <div style="text-align: left;">
-                <a href="https://bit.ly/2RrNtpr" style="font-size: 18px; font-weight: bold">
-                    Haptical Music Player
-                </a>
-                <p style="font-size: 20px;">Entertainment Computing 2013</p>
-                <div>
-                    <a href="https://java311.github.io/"><b>A. Balandra</b></a>, H. Mitake, M. Sato, S. Hasegawa
-                </div> 
+        <div class="pub-entry">
+            <a href="https://bit.ly/2RrNtpr" class="pub-title">
+                Haptical Music Player
+            </a>
+            <div class="pub-venue">Entertainment Computing 2013</div>
+            <div class="pub-authors">
+                <a href="https://java311.github.io/"><b>A. Balandra</b></a>, H. Mitake, M. Sato, S. Hasegawa
             </div>
         </div>
 
         <!-- 14 -->
-        <div style="text-align:left; padding-top: 2rem; padding-bottom: 2rem;">
-            <div style="text-align: left;">
-                <a href="https://github.com/java311/muni-neuron" style="font-size: 18px; font-weight: bold">
-                    Tridimensional reconstruction of neurons using clear light microscopic images
-                </a>
-                <p style="font-size: 20px;">National Computational Encounter on the Clinic Computing and Medical Informatics 2009</p>
-                <div>
-                    G. Torrealba, <a href="https://java311.github.io/"><b>A. Balandra</b></a>, G. Flores, M. Martin
-                </div> 
+        <div class="pub-entry">
+            <a href="https://github.com/java311/muni-neuron" class="pub-title">
+                Tridimensional reconstruction of neurons using clear light microscopic images
+            </a>
+            <div class="pub-venue">National Computational Encounter on the Clinic Computing and Medical Informatics 2009</div>
+            <div class="pub-authors">
+                G. Torrealba, <a href="https://java311.github.io/"><b>A. Balandra</b></a>, G. Flores, M. Martin
             </div>
         </div>
 
         <!-- 15 -->
-        <div style="text-align:left; padding-top: 2rem; padding-bottom: 2rem;">
-            <div style="text-align: left;">
-                <a href="https://github.com/java311/muni-neuron" style="font-size: 18px; font-weight: bold">
-                    Design Construction and Application of Artificial Muscles for physiological and medical purposes
-                </a>
-                <p style="font-size: 20px;">Junior Research Program – BUAP 2007</p>
-                <div>
-                    <a href="https://java311.github.io/"><b>A. Balandra</b></a>, A. Vazquez, E. Salceda, E. Soto
-                </div> 
+        <div class="pub-entry">
+            <a href="https://github.com/java311/muni-neuron" class="pub-title">
+                Design Construction and Application of Artificial Muscles for physiological and medical purposes
+            </a>
+            <div class="pub-venue">Junior Research Program &ndash; BUAP 2007</div>
+            <div class="pub-authors">
+                <b>A. Balandra</b>, A. Vazquez, E. Salceda, E. Soto
             </div>
         </div>
-
 
     </div>
+    </section>
 
-        <!-- List of Awards -->
-        <div class="container">
-            <h2>Awards</h2>
-            <hr/>
-    
-            <!-- 1 -->
-            <div style="text-align:left; padding-top: 2rem; padding-bottom: 2rem;">
-                <div style="text-align: left;">
-                    <a href="https://github.com/java311/PMiru" style="font-size: 18px; font-weight: bold">
-                        P-MIRU, a polarized-spectral imaging system, reveals reflection information on the biological surface
-                    </a>
-                    <p style="font-size: 20px;">Japanese Botanical Young Researchers Competition 2020 - 1st price (1 million yen grant)</p>
-                    <div>
-                        <a href="https://java311.github.io/"><b>Alfonso Balandra</b></a>, Doll Yusei, Takugo Hirose, Tomoaki Kajiwara, Masaaki Watabiki
-                    </div> 
-                </div>
-            </div>
+    <!-- List of Awards -->
+    <section class="section" id="awards">
+    <div class="container">
+        <div class="section-eyebrow">Recognition</div>
+        <h2>Awards</h2>
+        <hr/>
 
-            <!-- 2 -->
-            <div style="text-align:left; padding-top: 2rem; padding-bottom: 2rem;">
-                <div style="text-align: left;">
-                    <a href="https://bit.ly/2Y7Wh9F" style="font-size: 18px; font-weight: bold">
-                        Haptic Music Player
-                    </a>
-                    <p style="font-size: 20px;">Eurohaptics 2014, 3th place for Best Demonstration</p>
-                    <div>
-                        <a href="https://java311.github.io/"><b>Alfonso Balandra</b></a>, Hironori Mitake, Shoichi Hasegawa
-                    </div> 
-                </div>
+        <!-- 1 -->
+        <div class="pub-entry">
+            <a href="https://github.com/java311/PMiru" class="pub-title">
+                P-MIRU, a polarized-spectral imaging system, reveals reflection information on the biological surface
+            </a>
+            <div class="pub-venue">Japanese Botanical Young Researchers Competition 2020 - 1st price (1 million yen grant)</div>
+            <div class="pub-authors">
+                <a href="https://java311.github.io/"><b>Alfonso Balandra</b></a>, Doll Yusei, Takugo Hirose, Tomoaki Kajiwara, Masaaki Watabiki
             </div>
-
-            <!-- 3 -->
-            <div style="text-align:left; padding-top: 2rem; padding-bottom: 2rem;">
-                <div style="text-align: left;">
-                    <a href="https://bit.ly/2Y7Wh9F" style="font-size: 18px; font-weight: bold">
-                        Helmet, Online chess game.
-                    </a>
-                    <p style="font-size: 20px;"> Computer Science National Congress, November 2004 - Honor Place</p>
-                    <div>
-                        <a href="https://java311.github.io/"><b>Alfonso Balandra</b></a>, Hironori Mitake, Shoichi Hasegawa
-                    </div> 
-                </div>
-            </div>
-                        
         </div>
-    
-    <p style="text-align: center; padding-top: 2rem; font-size: 15px;">
-        &copy You are welcome to copy the code, attribute the source with a link back to this page.<br>
+
+        <!-- 2 -->
+        <div class="pub-entry">
+            <a href="https://bit.ly/2Y7Wh9F" class="pub-title">
+                Haptic Music Player
+            </a>
+            <div class="pub-venue">Eurohaptics 2014, 3th place for Best Demonstration</div>
+            <div class="pub-authors">
+                <a href="https://java311.github.io/"><b>Alfonso Balandra</b></a>, Hironori Mitake, Shoichi Hasegawa
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="pub-entry">
+            <a href="https://bit.ly/2Y7Wh9F" class="pub-title">
+                Helmet, Online chess game.
+            </a>
+            <div class="pub-venue">Computer Science National Congress, November 2004 &ndash; Honor Place</div>
+            <div class="pub-authors">
+                <a href="https://java311.github.io/"><b>Alfonso Balandra</b></a>, Hironori Mitake, Shoichi Hasegawa
+            </div>
+        </div>
+
+    </div>
+    </section>
+
+    <p class="footer-note">
+        &copy; You are welcome to copy the code, attribute the source with a link back to this page.<br>
         Template inspired from <a href="https://anttwo.github.io/">Antoine Guédon</a>.
     </p>
 
