@@ -1,6 +1,6 @@
 /* =========================================================
    Sistema de diseño — Perfil académico / profesional
-   Paleta: fondo cálido neutro + acento esmeralda vibrante (#1F9E6C)
+   Paleta: fondo cálido neutro + acento coral/naranja cálido (#E2693C)
    Tipografía: Sora (display, títulos y marca) + Roboto (texto)
    ========================================================= */
 
@@ -10,9 +10,9 @@
   --color-border: #E7E2DA;
   --color-text: #2B2B28;
   --color-text-muted: #6E6A63;
-  --color-accent: #1F9E6C;
-  --color-accent-dark: #157A53;
-  --color-accent-soft: #E6F5EE;
+  --color-accent: #E2693C;
+  --color-accent-dark: #B84F29;
+  --color-accent-soft: #FCEAE1;
 
   --font-display: 'Sora', sans-serif;
   --font-body: 'Roboto', sans-serif;
@@ -250,11 +250,17 @@ hr {
   color: var(--color-text-muted);
   padding: 0.85rem 0;
   border-bottom: 2px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
 }
 
 .nav-inner a:hover {
   color: var(--color-accent);
   text-decoration: none;
+  border-bottom-color: var(--color-accent);
+}
+
+.nav-inner a.active {
+  color: var(--color-accent-dark);
   border-bottom-color: var(--color-accent);
 }
 
@@ -472,6 +478,11 @@ section.section:last-of-type {
 .pub-authors {
   font-size: 14px;
   color: var(--color-text-muted);
+}
+
+/* Resalta el nombre del autor (Alfonso Balandra / A. Balandra) sin que sea un enlace */
+.author-me {
+  color: var(--color-accent-dark);
 }
 
 .pub-entry iframe {
