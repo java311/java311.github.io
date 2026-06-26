@@ -282,7 +282,37 @@ section.section:last-of-type {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--color-accent);
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.6rem;
+}
+
+/* Encabezado de sección: número de orden + título + línea divisoria */
+.section-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+.section-number {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-accent);
+  letter-spacing: 0.02em;
+  flex: 0 0 auto;
+}
+
+.section-header h2 {
+  flex: 0 0 auto;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.section-header .section-line {
+  flex: 1 1 auto;
+  height: 1px;
+  background-color: var(--color-border);
+  margin-left: 0.4rem;
 }
 
 /* -------------------- Tarjetas de experiencia / educacion -------------------- */
@@ -297,6 +327,19 @@ section.section:last-of-type {
   margin-bottom: 0;
   padding-bottom: 0;
   border-bottom: none;
+}
+
+/* Variante con contorno rectangular, usada en Professional Experience */
+.entry.card {
+  border: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.4rem 1.5rem;
+  background-color: var(--color-surface);
+}
+
+.entry.card:last-child {
+  border-bottom: 1px solid var(--color-border);
 }
 
 .entry-head {
@@ -398,15 +441,15 @@ section.section:last-of-type {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px dashed var(--color-border);
+  margin-bottom: 1.6rem;
+  padding: 1.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background-color: var(--color-surface);
 }
 
 .project-card:last-child {
   margin-bottom: 0;
-  padding-bottom: 0;
-  border-bottom: none;
 }
 
 .project-image {
@@ -452,6 +495,21 @@ section.section:last-of-type {
 
 .pub-entry:last-child {
   border-bottom: none;
+}
+
+/* Variante con contorno rectangular, usada en Publications */
+.pub-entry.card {
+  padding: 1.3rem 1.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background-color: var(--color-surface);
+}
+
+.pub-entry.card:last-child {
+  margin-bottom: 0;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .pub-title {
