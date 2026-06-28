@@ -27,7 +27,6 @@
   --card-border-hover: #E2693C;
   --card-glow: 0 0 0 1px rgba(226, 105, 60, 0.12), 0 10px 30px rgba(226, 105, 60, 0.10), 0 2px 8px rgba(43, 43, 40, 0.05);
   --card-glow-hover: 0 0 0 1px rgba(226, 105, 60, 0.28), 0 16px 40px rgba(226, 105, 60, 0.22), 0 4px 14px rgba(43, 43, 40, 0.08);
-  --mouse-glow: radial-gradient(420px circle at var(--mx, 50%) var(--my, 50%), rgba(226, 105, 60, 0.14), transparent 45%);
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -327,7 +326,7 @@ section.section:last-of-type {
   content: "";
   position: absolute;
   inset: 0;
-  background: var(--mouse-glow);
+  background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 50%), rgba(226, 187, 60, 0.14), transparent 75%);
   opacity: 0;
   transition: opacity 400ms var(--ease-out);
   pointer-events: none;
@@ -469,7 +468,7 @@ section.section:last-of-type {
   content: "";
   position: absolute;
   inset: 0;
-  background: var(--mouse-glow);
+  background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 50%), rgba(226, 187, 60, 0.14), transparent 75%);
   opacity: 0;
   transition: opacity 400ms var(--ease-out);
   pointer-events: none;
@@ -559,7 +558,7 @@ section.section:last-of-type {
   content: "";
   position: absolute;
   inset: 0;
-  background: var(--mouse-glow);
+  background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 50%), rgba(226, 187, 60, 0.14), transparent 75%);
   opacity: 0;
   transition: opacity 400ms var(--ease-out);
   pointer-events: none;
