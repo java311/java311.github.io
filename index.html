@@ -110,11 +110,8 @@
     <section class="section" id="experience">
     <div class="container">
         <div class="section-eyebrow">Career</div>
-        <div class="section-header">
-            <span class="section-number">01</span>
-            <h2>Professional Experience</h2>
-            <span class="section-line"></span>
-        </div>
+        <h2>Professional Experience</h2>
+        <hr/>
 
         <div class="entry card">
             <div class="entry-head">
@@ -241,13 +238,10 @@
     <section class="section" id="education">
     <div class="container">
         <div class="section-eyebrow">Academic background</div>
-        <div class="section-header">
-            <span class="section-number">02</span>
-            <h2>Education</h2>
-            <span class="section-line"></span>
-        </div>
+        <h2>Education</h2>
+        <hr/>
 
-        <div class="entry">
+        <div class="pub-entry card">
             <div class="entry-head">
                 <span class="entry-org"><a href="https://www.titech.ac.jp/">Tokyo Institute of Technology</a></span>
                 <span class="date-range"><span class="date">2014</span> &ndash; <span class="date">2019</span></span>
@@ -258,7 +252,7 @@
             </ul>
         </div>
 
-        <div class="entry">
+        <div class="pub-entry card">
             <div class="entry-head">
                 <span class="entry-org"><a href="https://www.titech.ac.jp/">Tokyo Institute of Technology</a></span>
                 <span class="date-range"><span class="date">2012</span> &ndash; <span class="date">2014</span></span>
@@ -269,7 +263,7 @@
             </ul>
         </div>
 
-        <div class="entry">
+        <div class="pub-entry card">
             <div class="entry-head">
                 <span class="entry-org"><a href="https://www.titech.ac.jp/">Autonomous University of Puebla (BUAP)</a></span>
                 <span class="date-range"><span class="date">2003</span> &ndash; <span class="date">2009</span></span>
@@ -277,8 +271,8 @@
             <div class="entry-role">Bachelor in Computer Science <span style="font-weight:400; color: var(--color-text-muted); font-size: 14px;">(Graduated with Cum Laude)</span></div>
         </div>
 
-        <div class="entry">
-            <div class="entry-org" style="margin-bottom: 0.6rem;"><h3>Languages</h3></div>
+        <div class="pub-entry card">
+            <div class="entry-org" style="margin-bottom: 0.6rem;"><b><h4>Languages</h4></b></div>
             <p><b>English:</b> Fluent (TOEIC paper format 920 pts)</p>
             <p><b>Japanese:</b> Conversational</p>
             <p><b>Spanish:</b> Native</p>
@@ -290,11 +284,8 @@
     <section class="section" id="projects">
     <div class="container">
         <div class="section-eyebrow">Selected work</div>
-        <div class="section-header">
-            <span class="section-number">03</span>
-            <h2>Projects</h2>
-            <span class="section-line"></span>
-        </div>
+        <h2>Projects</h2>
+        <hr/>
 
         <!-- PMIRU -->
         <div class="project-card">
@@ -384,11 +375,8 @@
     <section class="section" id="publications">
     <div class="container">
         <div class="section-eyebrow">Research</div>
-        <div class="section-header">
-            <span class="section-number">04</span>
-            <h2>Publications</h2>
-            <span class="section-line"></span>
-        </div>
+        <h2>Publications</h2>
+        <hr/>
 
         <!-- 1 -->
         <div class="pub-entry card">
@@ -562,14 +550,11 @@
     <section class="section" id="awards">
     <div class="container">
         <div class="section-eyebrow">Recognition</div>
-        <div class="section-header">
-            <span class="section-number">05</span>
-            <h2>Awards</h2>
-            <span class="section-line"></span>
-        </div>
+        <h2>Awards</h2>
+        <hr/>
 
         <!-- 1 -->
-        <div class="pub-entry">
+        <div class="pub-entry card">
             <a href="https://github.com/java311/PMiru" class="pub-title">
                 P-MIRU, a polarized-spectral imaging system, reveals reflection information on the biological surface
             </a>
@@ -580,7 +565,7 @@
         </div>
 
         <!-- 2 -->
-        <div class="pub-entry">
+        <div class="pub-entry card">
             <a href="https://bit.ly/2Y7Wh9F" class="pub-title">
                 Haptic Music Player
             </a>
@@ -591,7 +576,7 @@
         </div>
 
         <!-- 3 -->
-        <div class="pub-entry">
+        <div class="pub-entry card">
             <a href="https://bit.ly/2Y7Wh9F" class="pub-title">
                 Helmet, Online chess game.
             </a>
@@ -604,10 +589,7 @@
     </div>
     </section>
 
-    <p class="footer-note">
-        &copy; You are welcome to copy the code, attribute the source with a link back to this page.<br>
-        Template inspired from <a href="https://anttwo.github.io/">Antoine Guédon</a>.
-    </p>
+
 
     <!-- Scroll-spy: resalta el enlace de la sección visible en la barra de navegación -->
     <script>
@@ -650,6 +632,23 @@
 
         // Activa el primer enlace al cargar, por si la página inicia antes de cualquier intersección.
         setActive(sections[0].id);
+    })();
+    </script>
+
+    <!-- Resplandor (glow) que sigue al cursor sobre las tarjetas de Experience, Projects y Publications -->
+    <script>
+    (function () {
+        var cards = document.querySelectorAll('.entry.card, .project-card, .pub-entry.card');
+
+        cards.forEach(function (card) {
+            card.addEventListener('mousemove', function (e) {
+                var rect = card.getBoundingClientRect();
+                var x = e.clientX - rect.left;
+                var y = e.clientY - rect.top;
+                card.style.setProperty('--mx', x + 'px');
+                card.style.setProperty('--my', y + 'px');
+            });
+        });
     })();
     </script>
 
